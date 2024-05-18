@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura do body como a altura da viewport */
+  }
+
+  h1{
+    text-transform: uppercase;
+  }
+
+  .fa-spinner{
+    
+    animation: spin 1.5s infinite linear;
+  }
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
